@@ -1,0 +1,361 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 635px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-header {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    background-color: oldlace;
+    z-index: 20;
+    margin: 0;
+}
+
+.hero-brand {
+    display: flex;
+    position: relative;
+    left: 30px;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+}
+
+.hero-logo-container {
+    height: 100%;
+    width: 9%;
+}
+
+.hero-logo-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-title {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    color: rgb(10, 97, 68);
+}
+
+.hero-title span {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.hero-menu {
+    display: flex;
+    width: 45%;
+}
+
+.hero-menu ul li {
+    list-style: none;
+}
+
+.hero-menu ul li a {
+    text-decoration: none;
+    margin-right: 35px;
+    color: rgb(10, 97, 68);
+}
+
+.slide {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-bg-1 {
+    background-image: url('../resources/20250114-104300-8ltn-blog-134-01.jpg');
+    width: 100%;
+}
+
+.slide-bg-2 {
+    background-image: url('../resources/technology-3435575.jpg');
+    width: 100%;
+}
+
+.slide-bg-3 {
+    background-image: url('../resources/Engaging_with_technology-768x512.jpg');
+    width: 100%;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to right, rgba(7, 51, 31, 0.4) 50%, rgba(7, 51, 31, 0) 100%);
+}
+
+.slide-text,
+.slide-text-extension {
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    left: 50px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.slide-text span {
+    margin-right: 0;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.slide-text-extension {
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide-motto {
+    align-self: flex-start;
+    font-size: 16px;
+    font-style: italic;
+    align-self: flex-start;
+    margin-left: 50px;
+    color: white;
+}
+
+.learn-btn {
+    color: white;
+    background-color: rgb(10, 97, 68);
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s ease;
+    align-self: flex-start;
+    margin-left: 50px;
+    color: white;
+}
+
+.learn-btn:hover {
+    transform: scale(1.1);
+}
+/* ***About Section*** */
+.about-container {
+    display: flex;
+    height: 400px;
+    background-image: url('../resources/technology-3435575.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about-heading {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.about-group {
+    background-color: rgba(58, 58, 57, 0.7);
+    display: flex;
+}
+
+.about-sch {
+    display: flex;
+    gap: 5px;
+    padding: 10px 10px 0 20px;
+}
+
+.about-sch-img-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-sch-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-sch p {
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    color: aliceblue;
+}
+
+.about-sch p span {
+    font-weight: 800;
+}
+
+.about-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(40, 194, 104);
+    padding: 0 20px 0 20px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.about-summary {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+    width: 60%;
+    line-height: 25px;
+    padding: 0 50px 0 0;
+    color: beige;
+}
+
+.about-summary span {
+    margin: 20px 0 40px 0;
+    font-weight: lighter;
+}
+
+.about-summary a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(40, 194, 104);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-summary a:hover {
+    font-size: 15px;
+    transition: 0.3s ease-out;
+}
+
+.about-title:hover {
+    font-size: 31px;
+    transition: 0.3s ease-out;
+}
+/* ***Footer Section*** */
+.footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 51, 31);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 5px 0 0 0;
+}
+
+.footer-column-heading,
+.footer-column-sub-heading {
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
+.footer-column-sub-heading {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.footer-sch-address {
+    font-size: 13px;
+    margin-bottom: 0;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.footer-sch-phone {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.footer-sch-email a {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-decoration: none;
+    margin-left: 10px;
+    color: aquamarine;
+}
+
+.footer-column ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.footer-social-icons a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #bfe6c6;
+    align-self: baseline;
+    justify-self: baseline;
+}
+
+.footer-social-icons a img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
