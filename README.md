@@ -68,7 +68,7 @@ To become a leading African technology brand recognized for transforming busines
 ## 📞 Contact Us
 **GeminiCore Technologies**  
 📧 Email: [info@geminicoretech.com](mailto:info@geminicoretech.com)  
-🌐 Website: [www.geminicoretech.com](https://www.geminicoretech.com) *(update if not yet live)*  
+🌐 Website: [www.geminicoretech.com](https://www.geminicoretech.com) 
 📍 Location: Nigeria  
 
 ---
