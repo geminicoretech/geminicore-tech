@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", _ => {
     const slides = document.querySelectorAll(".slide");
     const slider = document.querySelector('.hero-container');
     let index = 0;
-    const timer = 10000;
+    const timer = 3000;
     let timerId;
 
     function startSlider() {
@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", _ => {
 
     startSlider();
 
-    slider.addEventListener('mouseenter', stopSlider);
-    slider.addEventListener('mouseleave', startSlider);
+    //slider.addEventListener('mouseenter', stopSlider);
+    //slider.addEventListener('mouseleave', startSlider);
 });

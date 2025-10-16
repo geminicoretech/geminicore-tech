@@ -12,6 +12,11 @@ body {
     flex-grow: 1;
     justify-content: center;
     align-items: flex-start;
+    border: solid;
+}
+
+@media (max-width: 768px) {
+    
 }
 
 .hero-header {
