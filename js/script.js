@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", _ => {
     const slides = document.querySelectorAll(".slide");
     const slider = document.querySelector('.hero-container');
     let index = 0;
-    const timer = 3000;
+    const timer = 4000;
     let timerId;
 
     function startSlider() {
@@ -21,4 +21,13 @@ document.addEventListener("DOMContentLoaded", _ => {
 
     //slider.addEventListener('mouseenter', stopSlider);
     //slider.addEventListener('mouseleave', startSlider);
+
+    const toggleButton = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        toggleButton.classList.toggle('open');
+    });
 });
+

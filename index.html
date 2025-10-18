@@ -4,31 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeminiCore Technologies</title>
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid brand-header">
-            <a class="navbar-brand brand-title" href="#">GeminiCore Technologies</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav nav-menu">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Contact us</a>
-                    <a class="nav-link" href="#">FAQs</a>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid brand-header">
+                <a class="navbar-brand brand-title" href="#">GeminiCore Technologies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-theme="dark">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-md-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex p-4 p-md-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
+        </nav>
+    </header>
+    <main>
+        <!--Hero Section-->
+        <div class="hero-container">
+            <div class="img-preload" style="display: none;">
+                <img src="resources/20250114-104300-8ltn-blog-134-01.jpg" alt="">
+                <img src="resources/technology-3435575.jpg" alt="">
+                <img src="resources/Engaging_with_technology-768x512.jpg" alt="">
+            </div>
             
+            <div class="slide slide-bg-1 active">
+                <div class="slide-content-container">
+                    <p class="slide-text"><span>GeminiCore</span></p>
+                    <p class="slide-text-extension">Technologies</p>
+                    <p class="slide-motto">Your path to technology begins here</p>
+                    <button href="/about" class="learn-btn">Take A Tour</button>
+                </div>
+            </div>
+            <div class="slide slide-bg-2">
+                <div class="slide-content-container">
+                    <p class="slide-text"><span>Welcome</span></p>
+                    <p class="slide-text-extension">to our platform</p>
+                    <p class="slide-motto">Your path to knowledge begins here</p>
+                    <button href="/about" class="learn-btn">Take A Tour</button>
+                </div>
+            </div>
+            <div class="slide slide-bg-3">
+                <div class="slide-content-container">
+                    <p class="slide-text"><span>Over 45</span></p>
+                    <p class="slide-text-extension">learning and practical courses</p>
+                    <p class="slide-motto">Your path to knowledge begins here</p>
+                    <button href="/about" class="learn-btn">Take A Tour</button>
+                </div>
+            </div>
         </div>
-        
-    </nav>
+        <!--About Section-->
+        <div class="about-container">
 
+        </div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
